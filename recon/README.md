@@ -2,7 +2,7 @@
 
 
 ## 1. FOOTPRINTING THROUGH SEARCH ENGINES
-#### DORKS
+#### SOME COMMON DORKS
 
     cache: This operator allows you to view cached version of the web page. [cache:www.google.com]- Query returns the cached version of the website www.google.com
 
@@ -42,15 +42,55 @@ You can also use FTP search engines such as Global FTP Search Engine (https://gl
     Gather Information using Deep and Dark Web Searching
     
     Determine Target OS Through Passive Footprinting
+    https://censys.io/domain?q=
 
 ## 3. FOOTPRINTING  THROUGH SOCIAL NETWORKING SITES
+    sherlock
+
+    https://followerwonk.com/analyze
+
+
 
 ## 4. WEBSITE FOOTPRINTING
+    finding IP, frame size and hop number using ping
+
+    https://centralops.net
+
+    using web data extractor
+
+    You can also use other web spiders such as ParseHub  https://www.parsehub.com), SpiderFoot (https://www.piderfoot.net), etc. to extract the target organization’s data.
+
+    Mirror a Target Website using HTTrack Web Site Copier
+
+    You can also use other mirroring tools such as NCollector Studio (http://www.calluna-software.com), Cyotek WebCopy (https://www.cyotek.com), etc. to mirror a target website.
+
+    Gather a Wordlist from the Target Website using CeWL 
 
 ## 5. EMAIL FOOTPRINTING
+
+    email header analysis
 
 ## 6. WHOIS FOOTPRINTING
 
 ## 7. DNS FOOTPRINTING
+    using nslookup
+        find CNAME record, find server IP using CNAME
 
-## 8. USING VARIOUS FOOTPRINTING TOOLS
+    reverse IP lookup
+
+    dnsrecon (to find dns pointers of given ip/ ip range)
+## 8. NETWORK FOOTPRINTING
+    using ARIN to find the network range
+
+    traceroute
+
+## 9. USING VARIOUS FOOTPRINTING TOOLS
+    maltego
+
+    recon-ng
+
+    OSRFramework
+
+    billcipher
+
+    OSINT Framework
