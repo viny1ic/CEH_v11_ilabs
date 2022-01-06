@@ -29,13 +29,24 @@
 ![image](https://user-images.githubusercontent.com/56624593/148432346-c70acc52-08e6-4ba2-8ca3-dc42eeaf0187.png)
     
 ## 2. Perform SNMP enumeration
-
+### USING SNMP-CHECK:
+    ```snmp-check```
+![image](https://user-images.githubusercontent.com/56624593/148436256-27dffcc6-0daa-458d-89b2-7dc92cd531be.png)
+    information available using this tool:
+     Network information, Network interfaces, Network IP and Routing information, TCP connections, listening ports, Processes, Storage information, File system information, 
+     Device information, Share, etc.
 ## 3. Perform LDAP enumeration
-
+### USE ADexplorer
+![image](https://user-images.githubusercontent.com/56624593/148437662-7d92ce7b-afc1-4ef2-9754-d5a86875a2fd.png)
+the attributes can be viewed and even modified
 ## 4. Perform NFS enumeration
-
+### USING SuperEnum
 ## 5. Perform DNS enumeration
+### USING ZONE TRANSFER
 
+### USING DNS CACHE SNOOPING
+
+### USING DNSSEC ZONE WALKING
 ## 6. Perform RPC, SMB, and FTP enumeration
 
 ## 7. Perform enumeration using various enumeration tools
