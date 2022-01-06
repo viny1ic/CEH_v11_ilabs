@@ -121,3 +121,6 @@ unicornscan [Target IP Address] -Iv
     nmap -D RND:10 [Target IP Address] 
 
     The IP address decoy technique refers to generating or manually specifying IP addresses of the decoys to evade IDS/firewall. This technique makes it difficult for the IDS/firewall to determine which IP address was actually scanning the network and which IP addresses were decoys. By using this command, Nmap automatically generates a random number of decoys for the scan and randomly positions the real IP address between the decoy IP addresses.
+    
+## 5. SCANNING USING METASPLOIT
+    USE THE SCANNER MODULE OF METASPLOIT
