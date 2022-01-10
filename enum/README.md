@@ -42,11 +42,26 @@ the attributes can be viewed and even modified
 ## 4. Perform NFS enumeration
 ### USING SuperEnum
 ## 5. Perform DNS enumeration
+BASIC DNS ENUM CAN BE DONE USING THE ```nslookup``` COMMAND
 ### USING ZONE TRANSFER
-
+```dig ns [domain name]``` <br>
+![image](https://user-images.githubusercontent.com/56624593/148812390-22410873-9c1c-404d-b2ec-baf8f78e6850.png) <br>
+now we check if zone transfer is possible or not: <br>
+```dig @[[NameServer]] [[Target Domain]] axfr```
+![image](https://user-images.githubusercontent.com/56624593/148812814-cf28728b-0b39-4684-a757-4bbcfe8f5f61.png) <br>
+in this case, zone transfer is not possible
 ### USING DNS CACHE SNOOPING
 
 ### USING DNSSEC ZONE WALKING
+DNSSEC zone walking is a DNS enumeration technique that is used to obtain the internal records of the target DNS server if the DNS zone is not properly configured. <br>
+```dnsrecon -d [domain name] -z``` <br>
+above command tries to perform DNSSEC zone walking <br>
+![image](https://user-images.githubusercontent.com/56624593/148813618-61b3a509-a591-45a4-9b77-f158858e449b.png)
+
 ## 6. Perform RPC, SMB, and FTP enumeration
+```nmap -p [port] -A [target ip]``` <br>
+In this command, -p specifies the port to be scanned and -A specifies aggressive scan. The aggressive scan option supports OS detection (-O), version scanning (-sV), script scanning (-sC), and traceroute (--traceroute).
 
 ## 7. Perform enumeration using various enumeration tools
+1. Global Network Inventory is used as an audit scanner in zero deployment and agent-free environments. It scans single or multiple computers by IP range or domain, as defined by the Global Network Inventory host file.
+2. Advanced IP Scanner provides various types of information about the computers on a target network. The program shows all network devices, gives you access to shared folders, provides remote control of computers (via RDP and Radmin), and can even remotely switch computers off.
