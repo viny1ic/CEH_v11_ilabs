@@ -1,5 +1,5 @@
 # SOCIAL ENGINEERING
-## Social engineering includes:
+## OBJECTIVES:
 * Sniff employee credentials
 * Obtain employee basic personal details and organisational information
 * Obtain usernames and passwords
