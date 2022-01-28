@@ -58,7 +58,7 @@ You can also use FTP search engines such as Global FTP Search Engine (https://gl
 
     using web data extractor
 
-    You can also use other web spiders such as ParseHub  https://www.parsehub.com), SpiderFoot (https://www.piderfoot.net), etc. to extract the target organization’s data.
+    You can also use other web spiders such as ParseHub  https://www.parsehub.com), SpiderFoot (https://www.spiderfoot.net), etc. to extract the target organization’s data.
 
     Mirror a Target Website using HTTrack Web Site Copier
 
