@@ -44,3 +44,33 @@ Cain and Abel is a simple windows GUI tool that can be installed and used like s
 The attacker first retrieves the MAC addresses of clients who are actively associated with the switch port. Then, the attacker spoofs their own MAC address with the MAC address of the legitimate client.<br>
 We can use tools like TMAC and SMAC to perform MAC spoofing. they are simple GUI tools for windows.
 
+## USING SNIFFING TOOLS
+Sniffing tools like the SteelCentral packet analyzer and the omnipeek network protocol analyzer can be used to easily sniff the network. these tools have a GUI so they are user friendly. any sensitive information like passwords will be captured while sniffing using any of the tools
+
+## DETECTING SNIFFING IN YOUR NETWORK
+any dedvice that is sniffing in a network, runs on promiscuous mode. These sniffers leave no trace and are hard to detect. some of the methods of detecting sniffing are:
+### DETECTING SNIFFING IN A SWITCH BASED NETWORK
+ARP spoofing succeeds by changing the IP address of the attacker’s computer to the IP address of the target computer.<br>
+to detect duplicate IPs and ARP request storms (indicators of ARP spoofing), we will use wireshark.
+1. start wireshark, go to edit -> preferences -> protocols -> ARP/RARP.
+2. Select the Detect ARP request storms checkbox.
+3. select the Detect duplicate IP addresses configuration checkbox.
+4. start capturing network data.
+5. stop capturing data when sufficient data is collected.
+6. go to the analyse tab -> expert information.
+7. warnings will be shown for duplicate IPs and ARP storms (if exist)<br>
+![image](https://user-images.githubusercontent.com/56624593/151594798-3fd32333-6253-4880-a043-f8b885f6eec5.png)
+
+### DETECTING USING XArp:
+XArp is a simple windows GUI tool that monitors the system and alerts the user if they are under a man in the middle attack (ARP spoofing)<br>
+![image](https://user-images.githubusercontent.com/56624593/151595434-32b180e3-c34e-4347-b71a-0246181d98c2.png)
+
+### USING NMAP AND NetScanTools TO DETECT PROMISCUOUS MODE
+sample nmap command:<br>
+```nmap --script=sniffer-detect [Target IP Address/ IP Address Range] ```<br>
+![image](https://user-images.githubusercontent.com/56624593/151595737-0e0b914e-34e2-4c10-999b-edf1096e458c.png)<br><br>
+NetScanTools is a similar windows GUI tool that can detect promiscuous mode users in the system.<br>
+![image](https://user-images.githubusercontent.com/56624593/151595908-ee2f4dac-4f59-4930-a2f4-3119277a0731.png)<br>
+
+
+
