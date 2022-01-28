@@ -52,3 +52,12 @@ When a large number of devices perform a DoS attack on a victim, it is called a 
 HOIC (High Orbit Ion Cannon) and LOIC (Low orbit Ion Cannon) are GUI based tools that are used to perform DOS, DDOS attacks on targets.<br>
 HOIC can target multiple targets (up to 256) at once, while LOIC is focussed more towards attacking web based applications and IPs.
 
+## PROTECTION AGAINST DDoS ATTACKS
+THERE ARE 3 MAIN WAYS TO DETECT DDoS ATTACKS
+* Activity Profiling: Profiles based on the average packet rate for a network flow, which consists of consecutive packets with similar packet header information
+* Sequential Change-point Detection: Filters network traffic by IP addresses, targeted port numbers, and communication protocols used, and stores the traffic flow data in a graph that shows the traffic flow rate over time.
+* Wavelet-based Signal Analysis: Analyzes network traffic in terms of spectral components
+  
+### PREVENTING DDoS USING ANTI DDoS GUARDIAN
+Anti DDoS Guardian is a GUI tool that limits network flow number, client bandwidth, client concurrent TCP connection number, and TCP connection rate. It also limits the UDP bandwidth, UDP connection rate, and UDP packet rate.<br>
+![image](https://user-images.githubusercontent.com/56624593/151605024-bead665e-1b77-43f2-a384-8d0bee6f9e88.png)<br>
