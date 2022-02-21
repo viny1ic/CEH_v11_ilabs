@@ -63,4 +63,8 @@ After the configuration, the honeypot wil start working<br>
 * TCP SYN port scan: ```nmap -sS <IP/range>```
 * INTENSE SCAN (OS detectoin, version detection, script scanning, traceroute): ```nmap -T<intensity(1-5)> -A```
 * Ping Sweep Scan (pings all devices in the network to discover them): ```nmap -sP <IP range>```
-* Zombie scan(use an intermediate 'zombie' for the scan): ```nmap -sI <zombie IP> <Victim IP>
+* Zombie scan(use an intermediate 'zombie' for the scan): ```nmap -sI <zombie IP> <Victim IP>```
+
+### HTTP/FTP tunneling
+This technology encapsulates data inside HTTP traffic (port 80). Many firewalls do not examine the payload of an HTTP packet to confirm that it is legitimate, thus it is possible to tunnel traffic via TCP port 80.
+Tools like <b>HTTPHost</b> can be used to carry out HTTP tunneling allows users to bypass the HTTP proxy, which blocks Internet access to e-mail, instant messengers, P2P file sharing, ICQ, News, FTP, IRC, etc.
