@@ -36,7 +36,11 @@ HTTP Trace: ```nmap --script http-trace -d [target website```<br>
 Check for firewall/IDS/IPS: ```nmap -p80 --script http-waf-detect [target website```<br>
 ![image](https://user-images.githubusercontent.com/56624593/155007337-835fd848-7b11-45bd-97c8-134b2eea534f.png)<br>
 
-
+# HACKING WEB SERVERS
+## EXAMPLE
+## Bruteforcing FPT using THC-Hydra
+```hydra -L [Username Wordlist] -P [password wordlist] ftp://[Target Machine]```<br>
+![image](https://user-images.githubusercontent.com/56624593/155009364-cf7a5f6d-7061-4809-84ca-73f2de62e98a.png)<br>
 
 
 
